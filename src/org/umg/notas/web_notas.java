@@ -23,7 +23,7 @@ public class web_notas extends NotasActivity {
 		setContentView(R.layout.web_notas);
 		webView = (WebView) findViewById(R.id.webView1);
 		 Bundle bundle=getIntent().getExtras();
-		 webView.loadUrl("http://www.fhi360guatemala.org/umg/umg.php?usr="+bundle.getString("user")+"&pss="+bundle.getString("passwd")+"&semester="+bundle.getString("sem")+"&anio="+bundle.getString("anio"));
+		 webView.loadUrl("http://190.149.206.186/umg/umg.php?usr="+bundle.getString("user")+"&pss="+bundle.getString("passwd")+"&semester="+bundle.getString("sem")+"&anio="+bundle.getString("anio"));
 
 		 usuario = bundle.getString("user");
 		 password = bundle.getString("passwd");
